@@ -130,5 +130,5 @@ you should see the following message:
 
 Congratulations! You have successfully learnt how to modify a blank template into an _Hello World_ DotNetCore microservice!
 
-github-actions]: https://github.com/mia-platform-marketplace/DotNet-Microservice-Template/actions
+[github-actions]: https://github.com/mia-platform-marketplace/DotNet-Microservice-Template/actions
 [github-actions-svg]: https://github.com/mia-platform-marketplace/DotNet-Microservice-Template/workflows/Node.js%20CI/badge.svg
