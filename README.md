@@ -1,4 +1,7 @@
 # DotNet Microservice Template walkthrough
+
+[![Build Status][github-actions-svg]][github-actions]
+
 This walkthrough will help you learn how to create a .NET Core microservice from scratch.
 
 ## Create a microservice
