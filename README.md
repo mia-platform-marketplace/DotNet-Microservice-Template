@@ -16,7 +16,7 @@ For this walkthrough select the following template: **.NET Core template**. Afte
 You can read more about this fields in [Manage your Microservices from the Dev Console](https://docs.mia-platform.eu/development_suite/api-console/api-design/services/) section of Mia-Platform documentation.
 
 Give your microservice the name you prefer, in this walkthrough we'll refer to it with the following name: **my-dotnetcore-service-name**.
-Then, fill the other required fields and confirm that you want to create a microservice. You have now generated a *my-dotnetcore-service-name* repository that is already deployed on Mia-Platform [NuGet repository]() once build script in CI is successful.
+Then, fill the other required fields and confirm that you want to create a microservice. You have now generated a *my-dotnetcore-service-name* repository that is already deployed on Mia-Platform [Nexus Repository Manager](https://nexus.mia-platform.eu/) once build script in CI is successful.
 
 ## Save your changes
 
@@ -129,3 +129,6 @@ you should see the following message:
 ```
 
 Congratulations! You have successfully learnt how to modify a blank template into an _Hello World_ DotNetCore microservice!
+
+github-actions]: https://github.com/mia-platform-marketplace/DotNet-Microservice-Template/actions
+[github-actions-svg]: https://github.com/mia-platform-marketplace/DotNet-Microservice-Template/workflows/Node.js%20CI/badge.svg
