@@ -13,9 +13,10 @@ namespace DotNetCore_Template.Controllers
             DecoratorResponseFactory decoratorResponseFactory) : base(miaEnvConfiguration, serviceClientFactory,
             decoratorResponseFactory)
         {
-            /*
-            * Insert your code here.
-            */
         }
+
+        /*
+        * Insert your code here.
+        */
     }
 }
