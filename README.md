@@ -29,7 +29,7 @@ A more detailed description on how to create and save a Microservice can be foun
 
 ## Look inside your repository
 
-After having created your first microservice (based on this template) you will be able to access to its git repository from the DevOps Console. Inside this repository you will find a [DotNetCoreTemplate/Controllers/TemplateController.cs](https://github.com/mia-platform-marketplace/DotNet-Microservice-Template/blob/master/DotNetCore_Template/Controllers/TemplateController.cs) file with the following lines of code:
+After having created your first microservice (based on this template) you will be able to access to its git repository from the DevOps Console. Inside this repository you will find a [App/Controllers/TemplateController.cs](https://github.com/mia-platform-marketplace/DotNet-Microservice-Template/blob/master/App/Controllers/TemplateController.cs) file with the following lines of code:
 
 ```csharp
 using MiaServiceDotNetLibrary;
@@ -37,7 +37,7 @@ using MiaServiceDotNetLibrary.Decorators;
 using MiaServiceDotNetLibrary.Environment;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNetCore_Template.Controllers
+namespace App.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -74,7 +74,7 @@ using MiaServiceDotNetLibrary.Decorators;
 using MiaServiceDotNetLibrary.Environment;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNetCore_Template.Controllers
+namespace App.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -96,7 +96,7 @@ namespace DotNetCore_Template.Controllers
 }
 ```
 
-Visiting the defined route: **/hello** through a **GET** request, you will receive the `Hello World!` message as response. 
+Visiting the defined route: **/hello** through a **GET** request, you will receive the `Hello World!` message as response.
 
 After committing these changes to your repository, you can go back to Mia Platform DevOps Console.
 

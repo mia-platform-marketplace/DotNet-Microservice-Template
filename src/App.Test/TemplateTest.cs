@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace DotNetCore_Template.Tests
+namespace App.Tests
 {
     public class Tests
     {

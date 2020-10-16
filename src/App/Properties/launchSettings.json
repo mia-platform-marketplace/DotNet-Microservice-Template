@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "DotNetCore_Template": {
+    "App": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:3001;http://localhost:3000",
