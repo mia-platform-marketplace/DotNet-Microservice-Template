@@ -1,12 +1,14 @@
 using System;
 using MiaServiceDotNetLibrary;
+using MiaServiceDotNetLibrary.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 
-namespace DotNetCore_Template
+namespace App
 {
     public class Startup
     {
@@ -22,7 +24,12 @@ namespace DotNetCore_Template
         {
             services.AddControllers();
             StartupUtils.ConfigureMiaLibraryServices(services, Configuration);
-            StartupUtils.ConfigureDocs(services, AppDomain.CurrentDomain.FriendlyName);
+            StartupUtils.ConfigureDocs(services, new OpenApiInfo
+            {
+                Version = "v1",
+                Title = AppDomain.CurrentDomain.FriendlyName, 
+                Description = "Template microservice."
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +45,8 @@ namespace DotNetCore_Template
             app.Use(StartupUtils.RouteInjections(app));
 
             StartupUtils.UseSwagger(app);
+
+            app.UseRequestResponseLoggingMiddleware();
 
             app.UseRouting();
 

@@ -3,7 +3,7 @@ using MiaServiceDotNetLibrary.Decorators;
 using MiaServiceDotNetLibrary.Environment;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNetCore_Template.Controllers
+namespace App.Controllers
 {
     [ApiController]
     [Route("[controller]")]
