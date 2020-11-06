@@ -77,7 +77,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace App.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("hello")]
     public class TemplateController : ServiceStatusController
     {
         public TemplateController(MiaEnvConfiguration miaEnvConfiguration, ServiceClientFactory serviceClientFactory,
@@ -87,7 +87,6 @@ namespace App.Controllers
         }
 
         [HttpGet]
-        [Route("hello")]
         public string Get()
         {
             return "Hello World!";
